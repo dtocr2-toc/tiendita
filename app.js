@@ -124,3 +124,15 @@ document.getElementById("btnNueva").addEventListener("click", function () {
 dibujarProductos();
 dibujarBilletes();
 actualizar();
+// Registrar Service Worker para instalar la aplicación
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("./sw.js")
+      .then(function () {
+        console.log("Aplicación lista para instalar");
+      })
+      .catch(function (error) {
+        console.error("Error al registrar Service Worker:", error);
+      });
+  });
+}
