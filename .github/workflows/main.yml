@@ -32,7 +32,7 @@ jobs:
       - name: Subir sitio web
         uses: actions/upload-pages-artifact@v3
         with:
-          path: www
+           path: .
 
       - name: Publicar sitio
         id: deployment
