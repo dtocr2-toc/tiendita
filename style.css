@@ -1,0 +1,121 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Verdana", Arial, sans-serif;
+  background: #1f3a34;
+  color: #20302c;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 18px 14px 28px;
+}
+
+header { text-align: center; color: #f6e7b4; margin-bottom: 14px; }
+header h1 { font-size: 1.7rem; letter-spacing: 1px; }
+header p { font-size: 0.82rem; opacity: 0.85; margin-top: 4px; }
+
+h2 { font-size: 0.95rem; margin-bottom: 8px; color: #1f3a34; }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.prod {
+  background: #f6e7b4;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 8px;
+  font-size: 0.9rem;
+  color: #20302c;
+  box-shadow: 0 4px 0 #b99a3c;
+}
+.prod:active { transform: translateY(3px); box-shadow: 0 1px 0 #b99a3c; }
+.prod .ico { font-size: 1.8rem; display: block; }
+.prod .precio { display: block; font-weight: bold; margin-top: 3px; color: #7a3d0c; }
+
+.cuenta, .pago {
+  background: #fffdf5;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+#lista { list-style: none; }
+#lista li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #cfc7a8;
+  font-size: 0.88rem;
+}
+#lista .vacio { color: #8a8570; justify-content: center; }
+.cant button {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: #1f3a34;
+  color: #fff;
+  font-size: 1rem;
+}
+.cant span { margin: 0 8px; font-weight: bold; }
+
+.fila.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.fila.total strong { font-size: 1.5rem; color: #7a3d0c; }
+
+.billetes { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.billetes button {
+  flex: 1 1 28%;
+  padding: 10px 0;
+  border: 2px solid #1f3a34;
+  background: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1f3a34;
+}
+.billetes button.sel { background: #1f3a34; color: #f6e7b4; }
+
+input {
+  width: 100%;
+  padding: 11px;
+  border: 2px solid #cfc7a8;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.resultado {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  background: #ece7d2;
+}
+.resultado.ok { background: #cfe9c8; color: #1d5a1d; }
+.resultado.falta { background: #f7d2c8; color: #8a2a10; }
+.resultado .grande { display: block; font-size: 1.7rem; font-weight: bold; margin-top: 2px; }
+
+.nueva {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #d9531e;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer { text-align: center; margin-top: 16px; font-size: 0.72rem; color: #f6e7b4; opacity: 0.6; }

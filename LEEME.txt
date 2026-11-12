@@ -1,0 +1,20 @@
+TIENDA SAN JOSE - PROYECTO LISTO PARA GITHUB ACTIONS
+
+ESTRUCTURA
+- www/index.html: estructura de la aplicación.
+- www/style.css: estilos visuales.
+- www/app.js: lógica de productos, cuenta, pago y vuelto.
+- config.xml y package.json: configuración de Apache Cordova.
+- .github/workflows/android.yml: proceso automático para compilar el APK.
+
+PASOS
+1. Descomprime este ZIP.
+2. Entra a tu repositorio GitHub tienda-san-jose.
+3. Sube TODO el contenido de esta carpeta a la raíz del repositorio. Asegúrate de incluir la carpeta oculta .github.
+4. Confirma los cambios con Commit changes.
+5. Abre la pestaña Actions y espera a que termine el flujo "Generar APK Android".
+6. En la ejecución completada, baja hasta Artifacts y descarga Tienda-San-Jose-APK.
+7. Descomprime el artefacto: dentro estará el archivo APK para instalarlo en un dispositivo Android.
+
+NOTA
+Este flujo genera un APK debug para pruebas e instalación manual. No es una versión firmada de producción para publicar en Google Play.

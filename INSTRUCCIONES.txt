@@ -1,0 +1,19 @@
+ARCHIVOS ADICIONALES PARA PWABUILDER
+
+Este ZIP agrega soporte PWA a la tienda y un flujo de publicación con GitHub Pages.
+No reemplaza tus archivos originales.
+
+1. Descomprime este ZIP.
+2. Sube su contenido a la raíz del repositorio existente, conservando las carpetas:
+   - www/manifest.json
+   - www/sw.js
+   - www/icons/icon-192.png
+   - www/icons/icon-512.png
+   - .github/workflows/pages.yml
+3. En el repositorio, abre Settings > Pages.
+4. En Build and deployment > Source, selecciona GitHub Actions.
+5. Guarda si aparece el botón Save.
+6. Abre Actions y espera el flujo "Publicar Tienda San José en GitHub Pages".
+7. Cuando termine en verde, abre Settings > Pages para ver la URL publicada.
+
+No elimines android.yml ni los demás archivos existentes.

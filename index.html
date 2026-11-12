@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>La Tiendita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>🏪 Tienda San José</h1>
+      <p>Toca un producto para agregarlo a la cuenta</p>
+    </header>
+
+    <section class="productos" id="productos"></section>
+
+    <section class="cuenta">
+      <h2>Cuenta</h2>
+      <ul id="lista"></ul>
+      <div class="fila total">
+        <span>Total</span>
+        <strong id="total">Q 0.00</strong>
+      </div>
+    </section>
+
+    <section class="pago">
+      <h2>¿Con cuánto paga?</h2>
+      <div class="billetes" id="billetes"></div>
+      <input id="otro" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Otro monto (Q)">
+      <div class="resultado" id="resultado">Agrega productos para empezar</div>
+    </section>
+
+    <button id="btnNueva" class="nueva">Nueva venta</button>
+    <footer>Aplicaciones móviles · Proyecto de clase</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
